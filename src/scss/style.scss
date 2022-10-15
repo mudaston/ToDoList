@@ -1,0 +1,33 @@
+@import "blocks/bootstrap-reboot.min";
+@import "blocks/fonts";
+@import "blocks/mixins";
+@import "blocks/main";
+@import "blocks/content";
+@import "blocks/task";
+@import "blocks/header";
+@import "blocks/sidenav";
+@import "blocks/add";
+@import "blocks/media";
+
+* {
+  font-family: 'Proxima', serif;
+}
+
+.page {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}

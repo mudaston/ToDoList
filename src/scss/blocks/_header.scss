@@ -1,0 +1,12 @@
+.header {
+  min-height: 70px;
+  background-color: $main-color;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__author {
+    margin: 0 3% 0 auto
+  }
+}

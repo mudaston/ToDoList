@@ -1,0 +1,61 @@
+.task-add {
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1300px;
+  padding: clamp(40px, 7%, 100px) 0 clamp(30px, 4%, 70px) 0;
+  gap: 20px 0;
+
+  &__wrapper {
+	width: 85%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 50px 0;
+  }
+
+  label {
+	width: 100%;
+  }
+
+  &__objective {
+	@include input-style();
+	width: 100%;
+	outline: none;
+	@include regular-text();
+
+	&::placeholder {
+	  color: #D6D6D6;
+	  @include regular-text();
+	}
+  }
+
+  [type='date'] {
+	@include input-style();
+    outline: none;
+    color: #D6D6D6;
+    justify-content: space-between;
+
+    &::-webkit-calendar-picker-indicator {
+      opacity: .4;
+    }
+  }
+
+  [type='submit'] {
+	text-transform: uppercase;
+	border: none;
+	height: 75px;
+	width: 25%;
+    min-width: 130px;
+	border-radius: 3rem;
+	margin-top: clamp(20px, 6%, 80px);
+	background-color: $main-color;
+	@include header-text();
+	font-weight: 700;
+	color: #ffffff;
+  }
+}
